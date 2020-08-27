@@ -13,7 +13,6 @@ func BytesToHexStrings(b []byte) []string {
 	for i := 0; i < len(s); i = i + 2 {
 		result = append(result, s[i:i+2])
 	}
-
 	return result
 }
 
@@ -27,6 +26,5 @@ func StringsToBytes(s []string) []byte {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	return result
 }
